@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int arr[10] = {1, 3, 2, 5,4,8};
+    int n = 4;
+
+    int isSorted = 1;  
+
+    
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            isSorted = 0;  
+            break;
+        }
+    }
+
+    if (isSorted)
+        printf("Array is sorted\n");
+    else
+        printf("Array is NOT sorted\n");
+
+    return 0;
+}
