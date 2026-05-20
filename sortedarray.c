@@ -2,7 +2,7 @@
 
 int main() {
     int arr[10] = {1, 3, 2, 5,4,8};
-    int n = 4;
+    int n =sizeof(arr) / sizeof(arr[0]);
 
     int isSorted = 1;  
 
